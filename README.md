@@ -41,7 +41,23 @@
 
 ---
 
-## 2. تنسيقات CSS للسليدر
+## 2. شرح عناصر الهيكل (HTML Elements)
+
+| العنصر / الكلاس          | الوظيفة                                                    |
+| ------------------------ | ---------------------------------------------------------- |
+| `.slider-container`      | الحاوية الرئيسية للسليدر، تحتوي على كل المكونات الأخرى     |
+| `.slider-wrapper`        | العنصر الذي يحتوي على جميع الشرائح (slides)، ويتحرك أفقيًا |
+| `.slide`                 | يمثل كل شريحة داخل السليدر                                 |
+| `.slider-controls`       | حاوية أزرار التنقل (السابق / التالي)                       |
+| `.prev`                  | زر الانتقال إلى الشريحة السابقة                            |
+| `.next`                  | زر الانتقال إلى الشريحة التالية                            |
+| `.slider-dots`           | حاوية النقاط الصغيرة أسفل السليدر                          |
+| `.dot`                   | تمثل نقطة واحدة للتنقل إلى شريحة معينة                     |
+| `data-index` (Attribute) | خاصية مخصصة لتحديد رقم الشريحة عند الضغط على النقطة        |
+
+---
+
+## 3. تنسيقات CSS للسليدر
 
 ```css
 .slider-container {
@@ -108,7 +124,7 @@
 
 ---
 
-## 3. JavaScript لتفعيل السليدر
+## 4. JavaScript لتفعيل السليدر
 
 ```javascript
 const slides = document.querySelectorAll(".slide");
@@ -160,7 +176,7 @@ sliderWrapper.addEventListener("mouseup", (e) => {
 
 ---
 
-## 4. تحسينات وأفضل الممارسات (Best Practices)
+## 5. تحسينات وأفضل الممارسات (Best Practices)
 
 * **استخدم touch events** لدعم الهواتف.
 * **أضف مؤقت للتشغيل التلقائي autoplay**.
@@ -170,7 +186,7 @@ sliderWrapper.addEventListener("mouseup", (e) => {
 
 ---
 
-## 5. البدائل الجاهزة (Slider Libraries)
+## 6. البدائل الجاهزة (Slider Libraries)
 
 | المكتبة      | الميزات                                      |
 | ------------ | -------------------------------------------- |
@@ -181,12 +197,10 @@ sliderWrapper.addEventListener("mouseup", (e) => {
 
 ---
 
-## 6. روابط مفيدة
+## 7. روابط مفيدة
 
 * [Swiper.js Documentation](https://swiperjs.com/)
 * [Slick Slider](https://kenwheeler.github.io/slick/)
 * [Glide.js](https://glidejs.com/)
 * [Splide.js](https://splidejs.com/)
-
----
 
